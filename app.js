@@ -1003,7 +1003,7 @@ function sendEmail(name) {
   });
 }
 
-app.get("/sendEmail", (req, res) => {
+app.get("/", (req, res) => {
   const { name } = req.query;
   sendEmail(name)
     .then((response) => res.send(response.message))
