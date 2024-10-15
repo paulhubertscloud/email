@@ -5,8 +5,8 @@ const app = express();
 const port = 5002;
 const cron = require("node-cron");
 
-var email = process.env.recipient_email;
-var myemail = process.env.sender_email;
+var email = "pntzasyx@gmail.com";
+var myemail = "paul.hubert.knows.it@gmail.com";
 var mypassword = process.env.application_password;
 
 function sendEmail(name) {
